@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+    <h1>Sign Up</h1>
+    <br><br><br>
+    <div id="signup">
+        <form>
+            <br><br><br>
+            <input id="name" type="text" name="change" placeholder="Name" required>
+            <br><br><br><br>
+            <input type="email" id="email" pattern=".+@gmail.com" size="30" placeholder="Email Id" required>
+            <br><br><br><br>
+            <input type="tel" id="tel" placeholder="Phone no" pattern="[0-9]{10}" maxlength="10" required>
+            <br><br><br><br>
+            <input type="password" id="pass" placeholder="Password"  maxlength="10" required>
+            <br><br><br><br>
+            <button id = "submit" disabled>SUBMIT</button>
+            <h5>Already a Customer?...<a href="signin.html">SignIn</a></h5>
+        </form>
+    </div>
+    <div id="otp">
+        <h1>Enter OTP Code</h1>
+        <div class="input-field">
+            <input id="otpval" type="number">
+        </div>
+        <button class="verify">Verify</button>
+    </div>
+    <script type="module" src="signup.js"></script>
+</body>
+</html>
